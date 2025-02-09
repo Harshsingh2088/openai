@@ -532,4 +532,93 @@ body, html {
       }
     }
 
- 
+ /* Reset default styles */
+
+
+/* Route-specific background */
+body.sitemap-xml-route {
+  background-color: white;
+}
+
+/* Container styles */
+.sitemap-container {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  max-width: 1200px;
+  margin: 20px;
+  color: #333;
+}
+
+/* Title styles */
+.sitemap-title {
+  font-size: 32px;
+  margin-bottom: 15px;
+  font-weight: normal;
+}
+
+/* Description text styles */
+.sitemap-description {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+/* Link styles */
+.yoast-link {
+  color: #dc3232;
+  text-decoration: none;
+}
+
+.sitemaps-link {
+  color: #0073aa;
+  text-decoration: none;
+}
+
+.yoast-link:hover,
+.sitemaps-link:hover {
+  text-decoration: underline;
+}
+
+/* Table styles */
+.sitemap-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: #f9f9f9;
+}
+
+.sitemap-table th {
+  background: #f1f1f1;
+  padding: 8px;
+  text-align: left;
+  font-weight: 600;
+  border: 1px solid #ccd0d4;
+}
+
+.sitemap-table td {
+  padding: 8px;
+  border: 1px solid #ccd0d4;
+}
+
+.sitemap-table a {
+  color: #0073aa;
+  text-decoration: none;
+}
+
+.sitemap-table a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .sitemap-container {
+    margin: 10px;
+  }
+  
+  .sitemap-table {
+    font-size: 14px;
+  }
+  
+  .sitemap-table th,
+  .sitemap-table td {
+    padding: 6px;
+  }
+}

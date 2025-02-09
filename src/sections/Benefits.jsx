@@ -87,12 +87,9 @@ const Benefits = () => {
                                     <img src={item.iconUrl} width={48} height={48} alt={item.title} />
                                 <Button className="ml-auto font-code text-xs font-bold text-white uppercase tracking-wider" onClick={()=>handleNavigation(item?.url)} >   
                                     
-                                        <a 
-                                         href ={item.url}
-                                   
-                                    >
+                                       
                              {item.linkText || " Explore more "} {/* Use dynamic text */} 
-                             </a> 
+                             
                                     
 </Button>
 <Arrow />

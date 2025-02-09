@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Route, Routes} from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import App from "./App.jsx";
 import "./index.css";
@@ -11,6 +11,8 @@ import Education from "./pages/Education.jsx";
 import EntertainmentAndMedia from "./pages/Entertainment & Media.jsx";
 import ExploreMorePage from "./pages-dummy/ExploreMorePage.jsx";
 import ScrollToTop from "./components/ScrollToTop.jsx";
+import Sitemap from "./pages/Sitemap.jsx";
+import Robots from "./pages/Robots.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
@@ -23,8 +25,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                 <Route path="/manufacturingAndAutomotiveDetails" element={<ManufacturingAndAutomotive />} /> 
                 <Route path="/educationDetails" element={<Education />} />
                 <Route path="/entertainmentAndMediaDetails" element={<EntertainmentAndMedia />} />
-                <Route path="/exploreMore" element={<ExploreMorePage />}  /> 
+                <Route path="/exploreMore" element={<ExploreMorePage />} />
+                <Route path="/sitemap.xml" element={<Sitemap />} />
+                <Route path="/robots.txt" element={<Robots />} />
             </Routes>
         </BrowserRouter>
     </React.StrictMode>
-);
+);   

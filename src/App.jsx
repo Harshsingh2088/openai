@@ -11,6 +11,8 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import WhatsAppChat from "./components/WhatsAppChat";
 import ExploreMorePage from "./pages-dummy/ExploreMorePage";
+import Sitemap from "./pages/Sitemap";
+import Robots from "./pages/Robots";
 
 const App = () => {
   return (
@@ -33,7 +35,10 @@ const App = () => {
             }
           />
           <Route path="/explore-more" element={<ExploreMorePage />} />
-        </Routes>
+          <Route path="/sitemap.xml" element={<Sitemap />} />
+          <Route path="/robots.txt" element={<Robots />} />
+        </Routes>  
+        
         <Footer />
       </div>
 
@@ -44,6 +49,8 @@ const App = () => {
   );
 };
 
-export default App; 
+export default App;
+
+
 
 
